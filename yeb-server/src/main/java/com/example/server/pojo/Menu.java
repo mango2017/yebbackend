@@ -76,4 +76,8 @@ public class Menu extends Model<Menu> {
     @TableField(exist = false)
     private List<Menu> children;
 
+    @ApiModelProperty(value = "角色列表")
+    @TableField(exist = false)
+    private List<Role> roles;
+
 }
