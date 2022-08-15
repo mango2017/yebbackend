@@ -70,7 +70,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .authenticated()
                 .withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
-
                     @Override
                     public <O extends FilterSecurityInterceptor> O postProcess(O object) {
                         object.setAccessDecisionManager(customUrlDecisionManager);
