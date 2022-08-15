@@ -1,6 +1,7 @@
 package com.example.server.controller;
 
 import com.google.code.kaptcha.impl.DefaultKaptcha;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +15,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 @RestController
+@Api(tags = "验证码管理")
 public class CaptchaController {
     @Autowired
     private DefaultKaptcha defaultKaptcha;
