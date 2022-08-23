@@ -1,5 +1,6 @@
 package com.example.server.config.security;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.AccessDecisionManager;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.ConfigAttribute;
@@ -19,16 +20,19 @@ import java.util.stream.Collectors;
  * 判断用户角色
  */
 @Component
+@Slf4j
 public class CustomUrlDecisionManager implements AccessDecisionManager {
     @Override
     public void decide(Authentication authentication, Object object, Collection<ConfigAttribute> configAttributes) throws AccessDeniedException, InsufficientAuthenticationException {
         for (ConfigAttribute configAttribute : configAttributes) {
             //当前url所需角色
             String needRole = configAttribute.getAttribute();
+            log.info("needRole="+needRole);
             //判断角色是否登录即可访问的角色，此角色在CustomFilter中设置
             if("ROLE_LOGIN".equals(needRole)){
                 //判断是否登录
                 if(authentication instanceof AnonymousAuthenticationToken){
+                    System.out.println("have yichang");
                     throw new AccessDeniedException("尚未登录，请登录！");
                 }else{
                     return ;
@@ -43,7 +47,7 @@ public class CustomUrlDecisionManager implements AccessDecisionManager {
                 }
             }
         }
-        throw new AccessDeniedException("权限不足，请联系管理员");
+        throw new AccessDeniedException("权限不足，请联系管理员@@@");
     }
 
     @Override

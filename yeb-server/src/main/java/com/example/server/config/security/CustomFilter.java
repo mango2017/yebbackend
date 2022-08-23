@@ -33,13 +33,17 @@ public class CustomFilter implements FilterInvocationSecurityMetadataSource {
         String requestUrl = ((FilterInvocation) object).getRequestUrl();
         log.info("url="+requestUrl);
         List<Menu> menus = menuService.getMenusWithRole();
+        log.info("CustomFilter menus="+menus);
         for(Menu menu : menus){
             //判断请求url与菜单角色是否匹配
             if(antPathMatcher.match(menu.getUrl(),requestUrl)){
                 String[] str = menu.getRoles().stream().map(Role::getName).toArray(String[]::new);
+                log.info("CustomFilter str="+str);
                 return SecurityConfig.createList(str);
             }
         }
+        log.info("message="+ toString().toCharArray());
+        log.info("message=mpp");
         //没匹配的url，默认登录即可访问
         return SecurityConfig.createList("ROLE_LOGIN");
     }

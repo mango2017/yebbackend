@@ -2,6 +2,7 @@ package com.example.server.config.security;
 
 import com.example.server.pojo.Admin;
 import com.example.server.service.IAdminService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +20,7 @@ import org.springframework.security.web.access.intercept.FilterSecurityIntercept
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
+@Slf4j
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private IAdminService iAdminService;
@@ -92,7 +94,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return username -> {
             Admin admin = iAdminService.getAdminByUserName(username);
             if(null != admin){
+                log.info("UserDetailsService@userid="+admin.getId());
                 admin.setRoles(iAdminService.getRoles(admin.getId()));
+                log.info("roles="+admin.getRoles());
                 return admin;
             }
             throw new UsernameNotFoundException("用户名活密码不正确");
