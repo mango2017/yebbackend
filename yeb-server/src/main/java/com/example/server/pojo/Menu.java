@@ -71,7 +71,6 @@ public class Menu extends Model<Menu> {
         return null;
     }
 
-
     @ApiModelProperty(value = "子菜单")
     @TableField(exist = false)
     private List<Menu> children;

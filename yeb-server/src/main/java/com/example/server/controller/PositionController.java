@@ -1,7 +1,6 @@
 package com.example.server.controller;
 
 
-import com.example.server.mapper.PositionMapper;
 import com.example.server.pojo.Position;
 import com.example.server.pojo.RespBean;
 import com.example.server.service.IPositionService;

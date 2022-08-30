@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef36ffe-5cfb-4f96-bbee-9e62a3c0ca01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/yeb-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/yebserver/YebServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/test/java/com/example/yebserver/YebServerApplicationTests.java" afterDir="false" />
+    <list default="true" id="cef36ffe-5cfb-4f96-bbee-9e62a3c0ca01" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/MenuRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/PermissController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/mapper/MenuRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/pojo/MenuRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/IMenuRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/MenuRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/PositionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/pojo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/pojo/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/IMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/IMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/mapper/MenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/mapper/MenuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/pojo/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/pojo/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/IMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/IMenuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/impl/MenuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +40,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/yeb-server" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,7 +53,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2DFA8NwqoUg3ymGIXiPNIKpu45E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -50,7 +69,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "F:/ruiji",
+    "last_opened_file_path": "F:/yebbackend/yeb-server/src/main/resources/mapper",
+    "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "ffb879825708fdcde661458755fc4f36",
     "vue.rearranger.settings.migration": "true"
   }
@@ -70,9 +90,9 @@
       <recent name="com.example.server.pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.server.pojo" />
       <recent name="com.example.server.service" />
       <recent name="com.example.server.service.impl" />
+      <recent name="com.example.server.pojo" />
       <recent name="com.example.server.mapper" />
       <recent name="com.example.server.controller" />
     </key>
@@ -128,10 +148,27 @@
       <workItem from="1660285277390" duration="3426000" />
       <workItem from="1660289169926" duration="533000" />
       <workItem from="1660290042478" duration="31785000" />
+      <workItem from="1661753296798" duration="564000" />
+      <workItem from="1661754652311" duration="13099000" />
+      <workItem from="1661831563151" duration="2740000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/mapper/MenuRoleMapper.java</url>
+          <line>21</line>
+          <properties class="com.example.server.mapper.MenuRoleMapper" method="insertRecord">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
