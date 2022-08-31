@@ -71,8 +71,4 @@ public class JoblevelController {
         return RespBean.error("删除失败");
     }
 
-
-
-
-
 }
