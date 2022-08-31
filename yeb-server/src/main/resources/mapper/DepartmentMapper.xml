@@ -23,12 +23,12 @@
         name, parent_id, dep_path, enabled, is_parent
     </sql>
 
-<!--    删除部门-->
+<!--    删除部门 存储过程-->
     <delete id="deleteDep" statementType="CALLABLE">
         call deleteDep(#{id,mode=IN,jdbcType=INTEGER},#{result,mode=OUT,jdbcType=INTEGER})
     </delete>
 
-    <!--    添加部门-->
+    <!--    添加部门 存储过程-->
     <select id="addDep" statementType="CALLABLE">
         call addDep(#{name,mode=IN,jdbcType=VARCHAR},#{parentId,mode=IN,jdbcType=INTEGER},#{enabled,mode=IN,jdbcType=BOOLEAN},#{result,mode=OUT,jdbcType=INTEGER},#{id,mode=OUT,jdbcType=INTEGER})
     </select>

@@ -3,13 +3,12 @@ package com.example.server.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.AdminUtils;
 import com.example.server.config.security.JwtTokenUtil;
 import com.example.server.mapper.AdminMapper;
+import com.example.server.mapper.AdminRoleMapper;
 import com.example.server.mapper.RoleMapper;
-import com.example.server.pojo.Admin;
-import com.example.server.pojo.Menu;
-import com.example.server.pojo.RespBean;
-import com.example.server.pojo.Role;
+import com.example.server.pojo.*;
 import com.example.server.service.IAdminService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,6 +54,10 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
 
     @Autowired
     private RoleMapper roleMapper;
+
+    @Autowired
+    private AdminRoleMapper adminRoleMapper;
+
 
     /**
      * 登录之后返回token
@@ -106,6 +109,33 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
     @Override
     public List<Role> getRoles(Integer adminId) {
         return roleMapper.getRoles(adminId);
+    }
+
+
+    /**
+     * 获取所有操作员
+     * @param keywords
+     * @return
+     */
+    @Override
+    public List<Admin> getAllAdmins(String keywords) {
+        return adminMapper.getAllAdmins(AdminUtils.getCurrentAdmin().getId(),keywords);
+    }
+
+    /**
+     * 更新操作员角色
+     * @param adminId
+     * @param rids
+     * @return
+     */
+    @Override
+    public RespBean updateAdminRole(Integer adminId, Integer[] rids) {
+        adminRoleMapper.delete(new QueryWrapper<AdminRole>().eq("adminId",adminId));
+        Integer result = adminRoleMapper.addAdminRole(adminId,rids);
+        if(rids.length == result){
+            return RespBean.success("更新成功");
+        }
+        return RespBean.error("更新失败");
     }
 
 }
