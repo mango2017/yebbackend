@@ -33,13 +33,13 @@ public class PermissController {
 
 
     @ApiOperation(value = "获取所有角色")
-    @GetMapping("/")
+    @GetMapping("/role")
     public List<Role> getAllRoles(){
         return roleService.list();
     }
 
     @ApiOperation(value = "添加角色")
-    @PostMapping("/")
+    @PostMapping("/role")
     public RespBean addRole(@RequestBody Role role){
         if(!role.getName().startsWith("ROLE_")){
             role.setName("ROLE_"+role.getName());

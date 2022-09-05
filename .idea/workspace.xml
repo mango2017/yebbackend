@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef36ffe-5cfb-4f96-bbee-9e62a3c0ca01" name="Changes" comment="2022.08.30">
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/AdminUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/AdminRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/mapper/AdminRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/pojo/AdminRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/IAdminRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/AdminRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminRoleMapper.xml" afterDir="false" />
+    <list default="true" id="cef36ffe-5cfb-4f96-bbee-9e62a3c0ca01" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/pojo/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/IAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/mapper/AdminMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/pojo/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/pojo/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/IAdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/IAdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/service/impl/MenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/config/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/config/Swagger2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/PermissController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/example/server/controller/PermissController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/config/Swagger2Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/example/server/config/Swagger2Config.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,42 +47,42 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/yebbackend/yeb-server/src/main/resources/mapper&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ffb879825708fdcde661458755fc4f36&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-17",
+    "last_opened_file_path": "F:/javaCrawler-master",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "ffb879825708fdcde661458755fc4f36",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\yebbackend\yeb-server\src\main\resources\mapper" />
+      <recent name="F:\yebbackend\yeb-server\src\main\java\com\example\server\service" />
       <recent name="F:\yebbackend\yeb-server\src\main\java\com\example\server\controller" />
       <recent name="F:\yebbackend\yeb-server\src\main\java\com\example\server\config" />
       <recent name="F:\yebbackend\yeb-server\src\main\java\com\example\server\config\security" />
-      <recent name="F:\yebbackend\yeb-generator\src\main\java\com\example\generator" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.server.pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.server.service.impl" />
       <recent name="com.example.server.service" />
+      <recent name="com.example.server.service.impl" />
+      <recent name="com.example.server.pojo" />
       <recent name="com.example.server.mapper" />
       <recent name="com.example.server.controller" />
-      <recent name="com.example.server.pojo" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.YebbackendApplication">
@@ -161,6 +142,8 @@
       <workItem from="1661753296798" duration="564000" />
       <workItem from="1661754652311" duration="13099000" />
       <workItem from="1661831563151" duration="10287000" />
+      <workItem from="1661999775486" duration="13093000" />
+      <workItem from="1662341763317" duration="1878000" />
     </task>
     <task id="LOCAL-00001" summary="2022.08.30">
       <created>1661836162767</created>
@@ -169,7 +152,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661836162767</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2022.08.31">
+      <created>1661917401699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661917401699</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2022.08.31">
+      <created>1661928531079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661928531079</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2022.08.31">
+      <created>1661936074967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661936074967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2022.08.30" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022.08.30" />
+    <MESSAGE value="2022.08.31" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022.08.31" />
   </component>
 </project>
