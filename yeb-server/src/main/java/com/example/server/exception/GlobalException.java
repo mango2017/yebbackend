@@ -12,7 +12,6 @@ import java.sql.SQLIntegrityConstraintViolationException;
  */
 @RestControllerAdvice
 public class GlobalException {
-
     @ExceptionHandler(SQLException.class)
     public RespBean mySqlException(SQLException e){
         if(e instanceof SQLIntegrityConstraintViolationException){
